@@ -1,0 +1,28 @@
+Plugin that allows to easily embed JW Flash video player into TinyMCE 
+editor.
+
+Installation
+
+* Copy contents of this folder to TinyMCE plugins/jwvideo folder.
+* Add jwvideo to installed plugins
+* Place jwvideo button appropriately.
+* Change default player location, streamer and height/width in 
+editor_plugin.js (lines 30-35)
+* Try it out!
+
+Known bugs/limitations
+* Does not work with IE8. I might or might not fix this someday
+* media plugin has to be installed (might work without it, but I haven't 
+confirmed it
+
+TODO
+* Use preview picture in editor
+* Clean up dialog.htm to use translation strings
+
+
+Author
+This magnificent plugin is written by Reinis Veips in Feb 2010
+You can reach me at http://wot.lv/
+
+Legal notice
+Use at own risk!
