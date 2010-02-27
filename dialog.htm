@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JW video</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	<style type="text/css">
+		form input.text {
+			width: 250px;
+		}
+	</style>
+</head>
+<body>
+
+<form onsubmit="JWVideoDialog.insert();return false;" action="#">
+	<p>JW FLV video plugin.</p>
+        <p><label for="jw_height">Height:</label><input type="text" class="text" id="jw_height" name="jw_height" /></p>
+        <p><label for="jw_width">Width:</label><input type="text" class="text" id="jw_width" name="jw_width" /></p>
+        <p><label for="jw_image">Initial image:</label><input type="text" class="text" id="jw_image" name="jw_image" /><span id="fbcontainer"></span></p>
+        <p><label for="jw_video_flv">Video file (FLV):</label><input type="text" class="text" id="jw_video_flv" name="jw_video_flv" /></p>
+        <p><label for="jw_autostart">Autostart:</label><input type="checkbox" class="text" id="jw_autostart" name="jw_autostart" /></p>
+		<p><label for="jw_source">Player source (SWF):</label><input type="text" class="text" id="jw_source" name="jw_source" /></p>
+        <p><label for="jw_streamer">Streamer:</label><input type="text" class="text" id="jw_streamer" name="jw_streamer" /></p>
+	
+	<div class="mceActionPanel">
+		<div style="float: left">
+			<input type="button" id="insert" name="insert" value="{#insert}" onclick="JWVideoDialog.insert();" />
+		</div>
+
+		<div style="float: right">
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</div>
+</form>
+
+</body>
+</html>
