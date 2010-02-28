@@ -11,7 +11,7 @@ editor_plugin.js (lines 30-35)
 * Try it out!
 
 Known bugs/limitations
-* Does not work with IE8. I might or might not fix this someday
+* Insertion does not work with IE8. Embedded code however works. I might or might not fix this someday.
 * media plugin has to be installed (might work without it, but I haven't 
 confirmed it
 
